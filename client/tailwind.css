@@ -1,0 +1,67 @@
+@tailwind preflight;
+
+@import "https://fonts.googleapis.com/css?family=Barlow:200,300,400,600|Source+Code+Pro:200,400";
+
+body, html {
+  background-color: #343a40;
+  @apply font-sans;
+}
+
+/*
+ * ORDER OF ATTRIBUTES
+ * flex, alignment, width/height, sizes, background, colour, text, border
+ */
+
+ .dashboard {
+  background-color: #adb5bd;
+  @apply .flex;
+  @apply .w-full;
+  @apply .mb-4;
+ }
+
+.highcharts-root {
+  @apply font-sans;
+}
+
+.chart {
+  background-color: #adb5bd;
+  @apply .w-4/5;
+  @apply .mt-2 .mb-4;
+}
+
+.chart-panel {
+  @apply .w-full;
+}
+
+.control {
+  @apply .flex;
+  @apply .justify-center;
+  @apply .w-1/5;
+  @apply .mt-16;
+}
+
+.form {
+  @apply .flex .flex-col;
+}
+
+.input {
+  @apply .w-32;
+  @apply .py-2 .px-2 .m-1;
+  @apply .border .border-blue;
+}
+
+.symbol {
+  @apply .flex;
+  @apply .justify-between .items-center;
+  @apply .w-32;
+  @apply .m-1;
+  @apply .border .border-grey;
+}
+
+.fab {
+  appearance: none;
+  cursor: pointer;
+  @apply .py-2 .px-2;
+}
+
+@tailwind utilities;

@@ -1,0 +1,28 @@
+{
+  "name": "chart-the-stock-market",
+  "version": "1.0.0",
+  "description": "Chart the Stock Market FCC Fullstack Challenge",
+  "main": "src/server.js",
+  "author": "Tony Johnson <tony@tosp.net.au>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.js --exec 'yarn run lint && node'",
+    "lint": "eslint **/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.0-rc0",
+    "morgan": "^1.9.0",
+    "socket.io": "^2.0.4"
+  }
+}

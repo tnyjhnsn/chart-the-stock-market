@@ -1,0 +1,28 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "space-before-function-paren": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "react/prop-types": [
+      0
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
