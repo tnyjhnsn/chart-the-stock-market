@@ -10,7 +10,7 @@ module.exports = (io) => {
     socket.on('market-charts', (action) => {
       switch (action.type) {
         case 'GET_CHART_DATA':
-          return market.getChartData(socket)
+          return market.getChartData(io)
         case 'ADD_SYMBOL':
           return market.addSymbol(io, action.symbol)
         case 'REMOVE_SYMBOL':

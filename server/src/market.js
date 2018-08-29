@@ -4,12 +4,12 @@ const History = require('./model/history')
 const symbolsInUse = []
 
 module.exports = {
-  getChartData(socket) {
+  getChartData(io) {
     symbolsInUse.forEach(async (symbol) => {
       const query = History.findOne({ symbol })
       const history = await query.exec()
       if (history) {
-        socket.emit('market-charts', { type: 'ADD_SYMBOL_SUCCESS', history })
+        io.emit('market-charts', { type: 'ADD_SYMBOL_SUCCESS', history })
       }
     })
   },
